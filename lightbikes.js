@@ -55,6 +55,7 @@ canvas.onkeyup = function(event){
   }
 }
 function loop(){
+	ctx.fillStyle = "Blue";
 	ctx,fillRect(x,y,5,5);
 	if(input.up) y -= 1;
 	if(input.down) y +=1;
