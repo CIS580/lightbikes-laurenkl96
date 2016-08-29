@@ -55,12 +55,12 @@ canvas.onkeyup = function(event){
   }
 }
 function loop(){
-	ctx.fillStyle = "Blue";
+	ctx.fillStyle = "blue";
 	ctx,fillRect(x,y,5,5);
 	if(input.up) y -= 1;
 	if(input.down) y +=1;
 	if(input.left) x -= 1;
 	if(input.right) x += 1;
-	setTimeout(loop, speed);
+	//setTimeout(loop, speed);
 }
-  loop();
+var intervalId =  setInterval(loop,speed);
